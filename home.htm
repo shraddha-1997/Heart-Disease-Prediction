@@ -1,0 +1,127 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/main.css" type="text/css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/static/home.css" type="text/css" />
+    <title>Predictor</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="left">
+        <a href="/"><img src="static/images/img1.jpg" alt="" /> </a>
+        <!--<img src="images/img1.jpg" alt="img1" /> -->
+      </div>
+      <div class="right">
+        <ul class="nav">
+          <li><a href="/home">Home</a></li>
+          <!-- <li><a href="/diet">Diet</a></li>  -->
+          <!--<li><a href="/about">About</a></li> -->
+          <!--<li><a href="/faq">FAQ</a></li>     -->
+        </ul>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="mainn">
+        <p id="head">Please enter the following Details!</p>
+        <form method="post" action="predict">
+          <table>
+            <tr>
+              <td>age:</td>
+              <td class="fg"><input type="text" name="age" placeholder="(In Years)" /></td>
+            </tr>
+            <tr>
+              <td>sex:</td>
+              <td class="fg">
+                <input type="text" name="sex" placeholder="(1=Male , 0=Female)" />
+              </td>
+            </tr>
+            <tr>
+              <td>chest pain type:</td>
+              <td class="fg">
+                <input type="text" name="cp" placeholder="(chest pain type)" />
+              </td>
+            </tr>
+            <tr>
+              <td>Resting Blood Pressure:</td>
+              <td class="fg">
+                <input type="text" name="trestbps" placeholder="(in mmHg)" />
+              </td>
+            </tr>
+            <tr>
+              <td>Cholesterol:</td>
+              <td class="fg">
+                <input type="text" name="chol" placeholder="(in mg/dL)" />
+              </td>
+            </tr>
+            <tr>
+              <td>Fasting Blood Sugar > 120mg/dL?</td>
+              <td class="fg">
+                <input type="text" name="fbs" placeholder="(Yes=1, No=0)" />
+              </td>
+            </tr>
+            <tr>
+              <td>ECG:</td>
+              <td class="fg">
+                <input type="text" name="restecg" placeholder="(0, 1, 2)" />
+              </td>
+            </tr>
+            <tr>
+              <td>Maximum Heart Rate Acheived:</td>
+              <td class="fg">
+                <input type="text" name="thalach" placeholder="(in BPM)" />
+             </tr>
+            <tr>
+              <td>Excersise induced Chest Pain(angina):</td>
+              <td class="fg">
+                <input type="text" name="exange" placeholder="(Yes=1, No=0)" />
+              </td>
+            </tr>
+            <tr>
+              <td>oldpeak(ST Depression):</td>
+              <td class="fg">
+                <input type="text" name="oldpeak" placeholder="(ST Depression from ECG)" />
+              </td>
+            </tr>
+            <tr>
+             <!-- <td>slope:</td>
+              <td class="fg">
+                <input type="text" name="slope" placeholder=" " />
+              </td>
+            </tr>
+            <tr>
+              <td>ca:</td>
+              <td class="fg">
+                <input type="text" name="ca" placeholder=" " />
+              </td>
+            </tr>
+            <tr>   
+              <td>thal:</td>
+              <td class="fg">
+                <input type="text" name="thal" placeholder=" " />
+              </td>
+            </tr>-->
+          </table>
+          <button type="submit" class="btn">Predict</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
